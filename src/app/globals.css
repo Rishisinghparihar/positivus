@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  /* box-sizing: border-box; 
+   padding-right: 1.3rem;
+  padding-left: 1.3rem; */
+  /* max-width: 90vw; */
+  /* width: 100vw; */
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,8 +16,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: white;
+    --foreground:rgb(10, 1, 1);
   }
 }
 
