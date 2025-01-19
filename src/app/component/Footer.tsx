@@ -80,32 +80,41 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center items-center">
-          <div>
-            <div className="bg-[#b9ff66] text-black font-semibold text-sm p-2 rounded">
-              Contact-us
+        <div className="flex justify-center mt-10 items-center gap-[29rem] pb-12 border-b-[1px] border-b-white">
+          <div className="">
+            <div className="bg-[#b9ff66] text-black font-semibold text-sm w-24 p-2 rounded">
+              Contact-us:
             </div>
-            <p>Email:info@positivus.com</p>
-            <p>Phone:xxxxx-xxxxx</p>
-            <p>Address: street no., area location</p>
+            <p className="">Email:info@positivus.com</p>
+            <p className="">Phone:xxxxx-xxxxx</p>
+            <p className="">Address: street no., area location</p>
           </div>
-          <div className="flex gap-10 bg-gray-800 justify-center items-center rounded-xl">
-            <div><input
-              type="text"
-              className="w-full border p-4 border-gray-300 rounded-2xl"
-              placeholder="Enter your name"
-            /></div>
-            <div> <button
-            type="submit"
-            className="bg-black text-white px-6 py-3 rounded-md w-full"
-          >
-            Send Message
-          </button></div>
+          <div className="flex gap-5 bg-gray-800 justify-center items-center rounded-xl h-32 w-[30rem]">
+            <div>
+              <input
+                type="text"
+                className="w-48 h-[3.4rem] border p-4 border-gray-300 bg-gray-800 rounded-2xl"
+                placeholder="Email"
+              />
             </div>
+            <div>
+              <button
+                type="submit"
+                className="bg-black text-white p-4 rounded-2xl w-48"
+              >
+                Subscribe to news
+              </button>
+            </div>
+          </div>
         </div>
-        <p className="text-center text-gray-400 mt-8">
-          © 2025 Positivus. All rights reserved.
-        </p>
+        <div className="flex gap-8">
+          <p className="text-start text-gray-400 mt-8">
+            © 2025 Positivus. All rights reserved.
+          </p>
+          <a href="#" type="privacy policy" className="underline mt-8">
+            Privacy Policy
+          </a>
+        </div>
       </div>
     </footer>
   );

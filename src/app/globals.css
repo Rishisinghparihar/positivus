@@ -8,6 +8,15 @@
   padding-left: 1.3rem; */
   /* max-width: 90vw; */
   /* width: 100vw; */
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700 */
+
+/* .roboto-mono-thisIsFont { */
+  /* font-family: "Roboto Mono", serif; */
+  /* font-optical-sizing: ;
+  font-weight: 700;
+  font-style: normal; */
+/* } */
 }
 :root {
   --background: #ffffff;
