@@ -3,12 +3,12 @@ import React from 'react'
 import ImageShape from './ShapeImage';
 const TeamSection = () => {
     const teamMembers = [
-      { name: "John Doe", role: "SEO Expert", image: "/team/john.png" },
-      { name: "Jane Smith", role: "PPC Specialist", image: "/team/jane.png" },
-      { name: "Michael Brown", role: "Social Media Manager", image: "/team/michael.png" },
-      { name: "Michael Brown", role: "Social Media Manager", image: "/team/michael.png" },
-      { name: "Michael Brown", role: "Social Media Manager", image: "/team/michael.png" },
-      { name: "Michael Brown", role: "Social Media Manager", image: "/team/michael.png" },
+      { name: "John Doe", role: "SEO Expert",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", image: "/44.png" },
+      { name: "Jane Smith", role: "PPC Specialist",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", image: "/dekhna.png" },
+      { name: "Michael Brown", role: "Social Media Manager",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", image: "/50.png" },
+      { name: "Michael Brown", role: "Social Media Manager",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", image: "/46.png" },
+      { name: "Michael Brown", role: "Social Media Manager",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", image: "/47.png" },
+      { name: "Michael Brown", role: "Social Media Manager",description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", image: "/51.png" },
     //   { name: "Michael Brown", role: "Social Media Manager", image: "/team/michael.png" },
     ];
   
@@ -24,31 +24,23 @@ const TeamSection = () => {
         </p>
       </div>
     </div>
-      {/* <section className="py-16 bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="text-center">
-              <img src={member.image} alt={member.name} className="rounded-full w-32 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold">{member.name}</h3>
-              <p className="text-gray-600">{member.role}</p>
-            </div>
-          ))}
-        </div>
-      </section> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-8 ">
       {teamMembers.map((teamMember, index) => (
+        <div key={index} className='h-72 w-[28rem] rounded-[2.5rem] border-[1.5px] shadow-xl border-b-[6px] border-gray-900'>
         <div
-          key={index}
-          className={` p-6 rounded-3xl shadow-lg flex flex-col justify-between `}
+          
+          className={` p-4 ml-5 grid grid-cols-3 justify-between border-b-2 border-black w-[24rem] mx-auto`}
         >
+          <ImageShape src={teamMember.image}
+            alt={teamMember.role}
+            />
           {/* Title Section */}
           <h3
             className={`font-semibold text-lg mb-4 inline-block px-2 py-1 rounded ` }
           >
             {teamMember.name}
           </h3>
-          <ImageShape src={teamMember.image}
-            alt={teamMember.role}/>
+          
           {/* Image Section */}
           {/* <img
             src={card.image}
@@ -68,6 +60,10 @@ const TeamSection = () => {
               </span>
             {/* <span className="text-green-600">&#8594;</span> */}
           </a>
+        </div>
+        <div className='px-10 pt-4 h-72 w-[28rem] '>
+          <p className='line-clamp-3'>{teamMember.description}</p>
+        </div>
         </div>
       ))}
     </div>

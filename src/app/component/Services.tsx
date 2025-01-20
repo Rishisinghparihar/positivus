@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -11,7 +12,7 @@ const Cards = () => {
       description: "Learn more",
       bgColor: "bg-gray-100",
       textColor: "text-green-600",
-      image: "/seo.png", // replace with your image path
+      image: "/90.png", // replace with your image path
     },
     {
       id: 2,
@@ -20,7 +21,7 @@ const Cards = () => {
       // bgColor: "bg-green-200",
       bgColor: "bg-[#B9FF66]",
       textColor: "text-black",
-      image: "/ppc.png", // replace with your image path
+      image: "/91.png", // replace with your image path
     },
     {
       id: 3,
@@ -28,7 +29,7 @@ const Cards = () => {
       description: "Learn more",
       bgColor: "bg-black",
       textColor: "text-white",
-      image: "/social.png", // replace with your image path
+      image: "/92.png", // replace with your image path
     },
     {
       id: 4,
@@ -36,7 +37,7 @@ const Cards = () => {
       description: "Learn more",
       bgColor: "bg-gray-100",
       textColor: "text-green-600",
-      image: "/email.png", // replace with your image path
+      image: "/93.png", // replace with your image path
     },
     {
       id: 5,
@@ -44,7 +45,7 @@ const Cards = () => {
       description: "Learn more",
       bgColor: "bg-[#B9FF66]",
       textColor: "text-black",
-      image: "/content.png", // replace with your image path
+      image: "/94.png", // replace with your image path
     },
     {
       id: 6,
@@ -52,7 +53,7 @@ const Cards = () => {
       description: "Learn more",
       bgColor: "bg-black",
       textColor: "text-white",
-      image: "/analytics.png", // replace with your image path
+      image: "/95.png" , // replace with your image path
     },
   ];
 
@@ -60,7 +61,7 @@ const Cards = () => {
     <>
     <div className="pl-28 py-14 bg-white">
       <div className="flex items-center gap-4">
-        <div className="bg-[#b9ff66] text-black font-semibold text-4xl p-1 rounded">
+        <div className="bg-PRIMARY text-black font-semibold text-4xl p-1 rounded">
           Services
         </div>
         <p className="text-gray-700 text-xl w-[37rem]">
@@ -68,25 +69,27 @@ const Cards = () => {
         </p>
       </div>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 p-8 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 p-8 ">
       {cardData.map((card) => (
+        <div key={card.id} className={`${card.bgColor} p-6 rounded-3xl shadow-lg w-[43rem] h-[19rem] flex justify-between border-[1.5px] border-b-[6px] border-gray-900`}>
         <div
-          key={card.id}
-          className={`${card.bgColor} p-6 rounded-3xl shadow-lg flex flex-col justify-between `}
+          
+          className="flex justify-between flex-col items-start"
         >
           {/* Title Section */}
           <h3
-            className={`font-semibold text-lg mb-4 inline-block px-2 py-1 rounded ${card.textColor} ` }
+            className={`font-semibold text-2xl w-56 mb-4 inline-block px-2 py-1 rounded ${card.textColor} ` }
           >
             {card.title}
           </h3>
 
           {/* Image Section */}
-          <img
+          
+          {/* <img
             src={card.image}
             alt={card.title}
-            className="w-full h-32 object-contain mb-4"
-          />
+            className=" h-40 object-contain mb-4 ml-[28rem] "
+          /> */}
 
           {/* Learn More Section */}
           <a
@@ -100,6 +103,12 @@ const Cards = () => {
               </span>
             {/* <span className="text-green-600">&#8594;</span> */}
           </a>
+        </div>
+        <Image src={card.image}
+          alt={card.title} 
+          width={300}
+          height={300}
+          />
         </div>
       ))}
     </div>

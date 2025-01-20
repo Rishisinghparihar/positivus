@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        PRIMARY:'#B9FF66',
       },
       boxShadow:{
         // '4xl':" rgba(0, 0, 0, 1) 2px 2px 4px, rgba(0, 0, 0, 1) -0.5px 7px , rgba(0, 0, 0, 1) 0px 0px  inset"
