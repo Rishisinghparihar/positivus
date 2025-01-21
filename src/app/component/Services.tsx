@@ -78,7 +78,8 @@ const Cards = () => {
         >
           {/* Title Section */}
           <h3
-            className={`font-semibold text-2xl w-56 mb-4 inline-block px-2 py-1 rounded ${card.textColor} ` }
+            // className={`font-semibold text-2xl w-56 mb-4 inline-block px-2 py-1 rounded ${card.textColor} ` }
+            className={`bg-PRIMARY text-black p-1 font-semibold text-2xl w-56 mb-4 inline-block px-2 py-1 rounded` }
           >
             {card.title}
           </h3>
@@ -98,7 +99,7 @@ const Cards = () => {
           >
             
             <span className="flex gap-3">
-              <span className={`h-8 w-8 flex items-center justify-center ${card.bgColor==="bg-black" ?"bg-white text-black":'bg-black text-green-700'} rounded-full -rotate-[30deg]`}><svg xmlns="http://www.w3.org/2000/svg" width={25} height={25}  viewBox="0 0 448 512"><path fill={`${card.bgColor==="bg-black" ?"black":'green'}`} d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+              <span className={`h-8 w-8 flex items-center justify-center ${card.bgColor==="bg-black" ?"bg-white text-black":'bg-black text-PRIMARY'} rounded-full -rotate-[30deg]`}><svg xmlns="http://www.w3.org/2000/svg" width={25} height={25}  viewBox="0 0 448 512"><path fill={`${card.bgColor==="bg-black" ?"black":'#B9FF66'}`} d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
               <span className="my-1">{card.description}</span>
               </span>
             {/* <span className="text-green-600">&#8594;</span> */}

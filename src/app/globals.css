@@ -32,7 +32,7 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: #a8d18d;
+  background-color:#B9FF66;
   border-radius: 50%;
   transform: scale(1.1);
 }
@@ -75,7 +75,7 @@ body {
   left: 50%;
   width: 60px;
   height: 60px;
-  background-color: #a8d18d;
+  background-color: #B9FF66;
   /* background-color: red; */
   border-radius: 50%;
   overflow: hidden;

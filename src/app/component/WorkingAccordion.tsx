@@ -51,7 +51,7 @@ const Accordion = () => {
     <section className="mx-28">
       <div className=" px-4 ">
       <div className="flex gap-8 mb-16">
-      <div className="bg-lime-400 text-black font-semibold text-3xl flex items-center justify-center p-1 w-[20rem] rounded-md text-left ">
+      <div className="bg-[#B9FF66] text-black font-semibold text-3xl flex items-center justify-center p-1 w-[20rem] rounded-md text-left ">
                 Our Working Process
       </div>
         {/* <h2 className="text-3xl font-bold text-center mb-8">Our Working Process</h2> */}
@@ -67,7 +67,7 @@ const Accordion = () => {
             <div
               key={index}
               className={`border rounded-3xl ${
-                openIndex === index ? "bg-lime-400" : "bg-white"
+                openIndex === index ? "bg-[#B9FF66]" : "bg-white"
               } shadow-4xl transition-all duration-200`}
             >
               {/* Accordion Header */}

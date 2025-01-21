@@ -1,50 +1,3 @@
-"use client"
-// import React from 'react'
-// interface TestimonialProps {
-//   name: string;
-//   title: string;
-//   quote: string;
-// }
-
-// const Testimonial: React.FC<TestimonialProps> = ({ name, title, quote }) => {
-//   return (
-//     <div className="testimonial">
-//       <p className="quote">{quote}</p>
-//       <div className="author">
-//         <span className="name">{name}</span>
-//         <span className="title">{title}</span>
-//       </div>
-//     </div>
-//   );
-// };
-
-// const Testimonials: React.FC = () => {
-//   const testimonialsData: TestimonialProps[] = [
-//     {
-//       name: 'John Smith',
-//       title: 'Marketing Director at XYZ Corp',
-//       quote:
-//         '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
-//     },
-//     // Add more testimonials here
-//   ];
-
-//   return (
-//     <section className="testimonials-section">
-//       <h2>Testimonials</h2>
-//       <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
-//       <div className="testimonials-container">
-//         {testimonialsData.map((testimonial, index) => (
-//           <Testimonial key={index} {...testimonial} />
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Testimonials;
-
-
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -87,7 +40,7 @@ const DemoCarousel = () => {
         </p>
       </div>
     </div>
-    <div className="relative max-w-[30rem] mx-auto mt-8 overflow-hidden rounded-lg bg-gray-700">
+    <div className="relative w-[80rem] mx-auto overflow-hidden rounded-lg bg-gray-700 ">
       {/* Carousel Slides */}
       <div
         className="flex transition-transform duration-500"
@@ -124,12 +77,12 @@ const DemoCarousel = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex justify-between items-center w-full px-4">
+      <div className="absolute bottom-4 mb-4 left-1/2 transform -translate-x-1/2 flex justify-between items-center w-[24rem] px-4">
         <button
           onClick={handlePrev}
           aria-label="Go to previous slide"
           title="Go to previous slide"
-          className="bg-gray-800 text-white w-10 h-10 flex justify-center items-center rounded-full hover:bg-gray-600"
+          className="bg-gray-700 text-white w-10 h-10 flex justify-center items-center rounded-full hover"
         >
           &larr;
         </button>
@@ -137,7 +90,7 @@ const DemoCarousel = () => {
           onClick={handleNext}
           aria-label="Go to next slide"
           title="Go to next slide"
-          className="bg-gray-800 text-white w-10 h-10 flex justify-center items-center rounded-full hover:bg-gray-600"
+          className="bg-gray-700 text-white w-10 h-10 flex justify-center rounded-full items-center hover"
         >
           &rarr;
         </button>
@@ -149,3 +102,49 @@ const DemoCarousel = () => {
 
 export default DemoCarousel;
 
+// "use client";
+// import React from "react";
+
+// const Testimonials = () => {
+//   const testimonials = [
+//     {
+//       text: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
+//       name: "John Smith",
+//       designation: "Marketing Director at XYZ Corp",
+//     },
+//     {
+//       text: "The team at Positivus is truly dedicated to understanding our business needs and delivering results. Their expertise in digital marketing has helped us achieve our business goals in record time.",
+//       name: "Jane Doe",
+//       designation: "CEO at ABC Inc.",
+//     },
+//     {
+//       text: "Positivus has been a game changer for our company. Their strategic approach and commitment to excellence have significantly improved our online presence.",
+//       name: "Michael Brown",
+//       designation: "Founder at Startup Hub",
+//     },
+//   ];
+
+//   return (
+//     <div className="bg-gray-700 py-20">
+//       <div className="max-w-7xl mx-auto px-10">
+//         <div className="grid md:grid-cols-3 gap-8">
+//           {testimonials.map((testimonial, index) => (
+//             <div
+//               key={index}
+//               className="relative bg-black text-white p-10 rounded-xl border border-lime-400"
+//             >
+//               <p className="text-sm italic">"{testimonial.text}"</p>
+//               <div className="mt-6">
+//                 <p className="text-lime-400 font-bold">{testimonial.name}</p>
+//                 <p className="text-gray-400 text-sm">{testimonial.designation}</p>
+//               </div>
+//               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 h-4 w-8 bg-black border-lime-400 border-b border-r rotate-45"></div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Testimonials;

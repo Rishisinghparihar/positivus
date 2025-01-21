@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react'
 const CTASection = () => {
     return (
-      <section className="py-10 mt-16 p-6 w-[90vw] h-[16rem] flex flex-col items-start justify-start bg-blue-300 shadow-md rounded-3xl text-left ml-[4rem]" >
+      <section className="py-10 mt-16 p-6 w-[90vw] h-[16rem] flex flex-col items-start justify-start bg-gray-100 shadow-md rounded-3xl text-left ml-[4rem]" >
         <h2 className="text-3xl font-bold mb-3">Let’s make things happen</h2>
         <p className="text-lg text-gray-600 mb-4 w-96">
             Contact us today to learn more about our digital marketing services and how we can help you grow your business online.
