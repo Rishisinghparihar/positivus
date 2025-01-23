@@ -1,5 +1,4 @@
 "use client";
-// components/ImageShape.js
 import Image from 'next/image';
 
 const ImageShape = ({ src, alt }:{src:string, alt:string}) => {
