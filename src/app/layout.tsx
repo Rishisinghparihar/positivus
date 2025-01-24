@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Positivus",
   description: "Positivus",
+  icons: {
+    icon: '.favicon.ico',
+  },
 };
 
 export default function RootLayout({
