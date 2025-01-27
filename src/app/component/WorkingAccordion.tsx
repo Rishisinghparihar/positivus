@@ -48,17 +48,18 @@ const Accordion = () => {
   ];
 
   return (
-    <section className="px-4 lg:mx-28 py-12 bg-white">
+    <section className="px-4 lg:mx-28 pb-12 bg-white">
       {/* Header Section */}
-      <div className="flex md:flex-row lg:gap-8 lg:items-center mb-16">
-        <div className="bg-PRIMARY text-black font-semibold text-4xl p-1 md:w-[20rem] items-center justify-center lg:-ml-2  rounded-md mb-4 text-left lg:mb-0 w-[15rem]">
-          Our Working Process
+      <div className="px-6 py-8 bg-white md:px-12 lg:mr-40 lg:py-14">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6">
+          <div className=" p-1 rounded mb-4 bg-PRIMARY text-black font-semibold lg:text-4xl sm:text-3xl md:text-4xl lg:mb-0">
+            Our Working Process
+          </div>
+          <p className="text-gray-700 text-lg md:text-xl lg:w-[20rem]">
+            Step-by-Step Guide to Achieving Your Business Goals
+          </p>
         </div>
-        <p className="text-gray-700 text-lg md:text-xl max-w-full md:max-w-3xl">
-          Step-by-Step Guide to Achieving Your Business Goals
-        </p>
       </div>
-
       {/* Accordion Section */}
       <div className="space-y-4 md:space-y-8 ">
         {steps.map((step, index) => (
@@ -108,7 +109,7 @@ const Accordion = () => {
                       />
                     </svg>
                   </span>
-                ) :  (
+                ) : (
                   <span className="flex w-10 md:w-[3.5rem] h-10 md:h-[3.5rem] border-2 rounded-full items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

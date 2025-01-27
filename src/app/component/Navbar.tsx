@@ -1,7 +1,13 @@
-"use client"
-import React from 'react'
+"use client";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="flex justify-between items-center py-4 px-8 bg-white md:px-16">
       {/* Logo */}
@@ -15,7 +21,7 @@ const Navbar = () => {
         <div className="text-4xl pl-4 font-semibold">Positivus</div>
       </div>
 
-      {/* Menu */}
+      {/* Menu for Medium and Large Screens */}
       <div className="hidden md:flex text-xl space-x-8 items-center">
         <ul className="flex space-x-6">
           <li>
@@ -44,14 +50,22 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <button type="button"className="border text-black font-thin px-4 py-2 rounded-md">
+        <button
+          type="button"
+          className="border text-black font-thin px-4 py-2 rounded-md"
+        >
           Request a quote
         </button>
       </div>
 
-      {/* Hamburger Menu */}
+      {/* Hamburger Menu for Mobile Screens */}
       <div className="md:hidden">
-        <button type="button" className="text-3xl" title="Menu">
+        <button
+          type="button"
+          className="text-3xl"
+          title="Menu"
+          onClick={toggleMenu}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -68,6 +82,45 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
+
+      {/* Dropdown Menu for Mobile Screens */}
+      {isMenuOpen && (
+        <div className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col text-center text-lg py-4 z-50">
+          <ul className="space-y-4">
+            <li>
+              <a href="#" className="hover:text-gray-700">
+                About-us
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-700">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-700">
+                Use Cases
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-700">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-700">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            className="mt-4 border text-black font-thin px-4 py-2 rounded-md mx-auto"
+          >
+            Request a quote
+          </button>
+        </div>
+      )}
     </nav>
   );
 };

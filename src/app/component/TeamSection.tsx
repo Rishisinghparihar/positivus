@@ -51,34 +51,35 @@ const TeamSection = () => {
   return (
     <>
       {/* Header Section */}
-      <div className="pl-6 md:pl-12 lg:pl-28 py-14 bg-white">
-        <div className="flex flex-col md:flex-row md:items-center gap-4">
-          <div className="bg-PRIMARY text-black font-semibold md:text-3xl lg:text-4xl p-1 rounded">
+      <div className="px-4 py-8 bg-white sm:px-6 md:px-12 lg:pl-28 lg:py-14">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6">
+          <div className="lg:text-4xl sm:text-3xl md:text-4xl bg-PRIMARY text-black font-semibold rounded mb-4 lg:mb-0 p-2">
             Team
           </div>
-          <p className="text-gray-700 md:text-lg lg:text-xl capitalize max-w-full md:max-w-lg">
-            Meet the skilled and experienced team behind our successful digital marketing strategies.
+          <p className="text-gray-700 text-base sm:text-lg md:text-xl lg:w-[30rem]">
+            Meet the skilled and experienced team behind our successful digital
+            marketing strategies.
           </p>
         </div>
       </div>
 
       {/* Team Members Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 md:px-6 lg:px-20 lg:p-8">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-10 md:px-6 lg:px-20 lg:p-8 sm:px-6">
         {teamMembers.map((teamMember, index) => (
           <div
             key={index}
-            className="h-auto lg:h-72 w-full lg:w-[28rem] rounded-[2.5rem] border-[1.5px] shadow-xl border-b-[6px] border-gray-900"
+            className="h-auto w-full rounded-[1.5rem] border-[1px] shadow-md border-b-[4px] border-gray-900"
           >
             {/* Image and Title Section */}
-            <div className="p-4 grid grid-cols-3 justify-between border-b-2 border-black w-full lg:w-[24rem] mx-auto">
+            <div className="p-4 grid grid-cols-3 gap-4 justify-between border-b-[1.5px] w-full lg:w-[24rem] mx-auto border-black">
               <ImageShape src={teamMember.image} alt={teamMember.role} />
-              <div className="col-span-2 flex flex-col justify-between">
-                <h3 className="font-semibold text-md lg:text-lg mb-4 inline-block px-2 py-1 rounded">
+              <div className="col-span-2 flex flex-col justify-center">
+                <h3 className="font-semibold text-md sm:text-lg mb-2">
                   {teamMember.name}
                 </h3>
                 <a
                   href="#"
-                  className="flex items-center gap-2 text-black hover:text-PRIMARY font-medium"
+                  className="text-black hover:text-PRIMARY text-sm sm:text-base font-medium"
                 >
                   {teamMember.role}
                 </a>
@@ -86,13 +87,21 @@ const TeamSection = () => {
             </div>
 
             {/* Description Section */}
-            <div className="px-4 md:px-6 py-4 lg:px-10 lg:h-72 md:h-32 w-full lg:w-[28rem]">
-              <p className="text-sm lg:text-base text-gray-700 line-clamp-3">
+            <div className="px-4 py-4">
+              <p className="text-sm sm:text-base text-gray-700 line-clamp-4">
                 {teamMember.description}
               </p>
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-end items-end py-4 lg:mr-[5rem]">
+        <button
+          type="submit"
+          className="bg-black text-white px-6 py-3 rounded-xl"
+        >
+          see all team
+        </button>
       </div>
     </>
   );

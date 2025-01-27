@@ -31,12 +31,12 @@ const DemoCarousel = () => {
   return (
     <>
       {/* Header Section */}
-      <div className="px-6 md:pl-12 lg:pl-28 py-14 bg-white">
-        <div className="flex flex-col md:flex-row md:items-start lg:items-center gap-4">
-          <div className="bg-PRIMARY text-black font-semibold md:text-3xl lg:text-4xl p-1 rounded">
+      <div className="px-4 py-8 bg-white sm:px-6 md:px-12 lg:pl-28 lg:py-14">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6">
+          <div className="lg:text-4xl sm:text-3xl md:text-4xl bg-PRIMARY text-black font-semibold rounded mb-4 lg:mb-0 p-2">
             Testimonials
           </div>
-          <p className="text-gray-700 md:text-lg lg:text-xl max-w-full md:max-w-lg">
+          <p className="text-gray-700 text-base sm:text-lg md:text-xl lg:w-[30rem]">
             Hear from our satisfied clients: Read our testimonials to learn more
             about our digital marketing services.
           </p>
@@ -44,7 +44,7 @@ const DemoCarousel = () => {
       </div>
 
       {/* Carousel Section */}
-      <div className="relative lg:w-full md:max-w-5xl mx-52 overflow-hidden rounded-[38px] bg-gray-700">
+      <div className="relative w-full sm:w-[90%] md:max-w-5xl mx-auto overflow-hidden rounded-xl bg-gray-700 sm:px-4 lg:h-[30rem]">
         {/* Carousel Slides */}
         <div
           className="flex transition-transform duration-500"
@@ -57,23 +57,23 @@ const DemoCarousel = () => {
               <Image
                 src={slide}
                 alt={`Slide ${index + 1}`}
-                width={600}
-                height={400}
-                className="object-cover w-auto h-auto"
+                width={250}
+                height={250}
+                className="object-cover w-full"
               />
             </div>
           ))}
         </div>
 
         {/* Navigation Dots */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               aria-label={`Go to slide ${index + 1}`}
               title={`Go to slide ${index + 1}`}
-              className={`w-2 h-2 rounded-full ${
+              className={`w-2.5 h-2.5 rounded-full ${
                 index === currentIndex ? "bg-gray-800" : "bg-gray-400"
               }`}
             ></button>
@@ -81,7 +81,7 @@ const DemoCarousel = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="absolute bottom-4 lg:mb-4 left-1/2 transform -translate-x-1/2 flex justify-between items-center px-4 md:px-8 lg:w-[24rem]">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex justify-between items-center px-4 w-[20rem]">
           <button
             onClick={handlePrev}
             aria-label="Go to previous slide"

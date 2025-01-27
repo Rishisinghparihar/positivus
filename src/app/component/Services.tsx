@@ -58,17 +58,17 @@ const Cards = () => {
     <>
       <div className="px-6 py-8 bg-white md:px-12 lg:pl-28 lg:py-14">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6">
-          <div className="bg-primary p-1 rounded mb-4 bg-PRIMARY text-black font-semibold text-4xl lg:mb-0">
+          <div className="p-1 rounded mb-4 bg-PRIMARY text-black font-semibold lg:text-4xl md:text-4xl  sm:text-3xl lg:mb-0">
             Services
           </div>
           <p className="text-gray-700 text-lg md:text-xl lg:w-[37rem]">
-            At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
           </p>
         </div>
       </div>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-10 p-8 md:p-12">
-        {cardData.map((card,index) => (
+        {cardData.map((card, index) => (
           <div
             key={card.id}
             className={`${card.bgColor} p-12 rounded-3xl shadow-lg lg:w-[43rem] lg:h-[19rem] flex flex-col md:flex-row items-center justify-between border-[1.5px] border-b-[6px] border-gray-900`}
@@ -76,7 +76,11 @@ const Cards = () => {
             {/* Content */}
             <div className="flex justify-between flex-col items-start mb-4 md:mb-0 md:mr-6">
               <h3
-                className={` text-black p-1 font-semibold text-2xl md:text-xl lg:w-56 inline-block px-2 py-1 rounded mb-[9rem] ${index===0||index===3||index===5? 'bg-PRIMARY':'bg-white'}`}
+                className={` text-black p-1 font-semibold text-2xl md:text-xl lg:w-56 inline-block px-2 py-1 rounded mb-[9rem] ${
+                  index === 0 || index === 3 || index === 5
+                    ? "bg-PRIMARY"
+                    : "bg-white"
+                }`}
               >
                 {card.title}
               </h3>

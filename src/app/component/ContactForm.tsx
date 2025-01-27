@@ -14,12 +14,12 @@ const ContactForm = () => {
   return (
     <>
       {/* Header Section */}
-      <div className="px-6 md:px-12 lg:pl-28 lg:py-14 bg-white">
-        <div className="flex flex-col md:flex-row items-center gap-4">
-          <div className="bg-PRIMARY text-black font-semibold md:text-3xl lg:text-4xl p-1 rounded">
+      <div className="px-6 py-8 bg-white md:px-12 lg:pl-28 lg:py-14">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6">
+          <div className="p-1 rounded mb-4 bg-PRIMARY text-black font-semibold lg:text-4xl md:text-4xl  sm:text-3xl lg:mb-0">
             Contact-us
           </div>
-          <p className="text-gray-700 md:text-lg lg:text-xl capitalize md:w[17rem] lg:max-w-sm">
+          <p className="text-gray-700 text-lg md:text-xl lg:w-[22rem]">
             Connect with us. Let&apos;s discuss your digital marketing needs.
           </p>
         </div>
@@ -27,11 +27,11 @@ const ContactForm = () => {
 
       {/* Contact Form Section */}
       <div className="py-16 bg-gray-100 lg:w-[80rem] mx-auto rounded-3xl">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 px-6 md:px-12">
+        <div className="flex flex-col lg:items-center md:flex-row justify-between gap-6 px-6 md:px-12">
           {/* Radio Buttons */}
-          <div className="flex flex-col md:flex-row gap-6 lg:px-4 lg:ml-[6.5rem]">
+          <div className="flex flex-col  md:flex-row gap-6 lg:px-4 lg:ml-[6.5rem]">
             {/* First Radio Button */}
-            <label className="flex items-center space-x-2 cursor-pointer">
+            <label className="flex  space-x-2 cursor-pointer">
               <input
                 type="radio"
                 name="option"
@@ -85,7 +85,9 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2">Email</label>
+              <label className="block text-gray-700 font-bold mb-2">
+                Email
+              </label>
               <input
                 type="email"
                 className="w-full border border-gray-300 p-4 rounded-2xl"
@@ -94,7 +96,9 @@ const ContactForm = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2">Message</label>
+              <label className="block text-gray-700 font-bold mb-2">
+                Message
+              </label>
               <textarea
                 className="w-full border border-gray-300 p-4 rounded-2xl"
                 placeholder="Enter your message"
@@ -108,18 +112,17 @@ const ContactForm = () => {
               Send Message
             </button>
           </form>
-                 {/* Image Section */}
+          {/* Image Section */}
           <div className="flex justify-center md:ml-[6rem]">
             <Image
               src="/img-1.png"
               alt="Decorative"
               width={300}
               height={300}
-              className="max-w-full lg:ml-[22.9rem]"
+              className="lg:max-w-full lg:ml-[22.9rem]"
             />
           </div>
         </div>
- 
       </div>
     </>
   );
