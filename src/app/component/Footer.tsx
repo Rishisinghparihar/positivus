@@ -28,27 +28,27 @@ const Footer = () => {
               <ul className="grid grid-cols-2 lg:grid-cols-6  gap-4 sm:gap-4 md:gap-8 text-center lg:place-items-center ">
                 <li>
                   <Link href="#" className="underline">
-                    About
+                    About-Us
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="underline">
-                    Solutions
+                    Services
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="underline">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="underline">
-                    Pricing
+                    Use-Cases
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="underline">
                     Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="underline">
+                    Blog
                   </Link>
                 </li>
               </ul>

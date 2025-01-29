@@ -67,7 +67,7 @@ const Cards = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-10 p-8 md:p-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-10 p-10 md:p-12">
         {cardData.map((card, index) => (
           <div
             key={card.id}

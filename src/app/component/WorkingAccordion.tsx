@@ -35,13 +35,13 @@ const Accordion = () => {
     },
     {
       number: "05",
-      title: "Monitoring and Optimization",
+      title: "Reporting and Communication",
       description:
         "We will continually monitor and optimize the performance of the strategies to deliver long-term success.",
     },
     {
       number: "06",
-      title: "Monitoring and Optimization",
+      title: "continual Improvement",
       description:
         "We will continually monitor and optimize the performance of the strategies to deliver long-term success.",
     },

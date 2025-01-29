@@ -11,7 +11,7 @@ const CTASection = () => {
           Let’s make things happen
         </h2>
         <p className="text-base md:text-lg text-gray-600 mb-4 max-w-md">
-          Contact us today to learn more about our digital marketing services and how we can help you grow your business online.
+          Contact us today to learn more about our digital marketing services can help your business grow and succeed online.
         </p>
         <button className="bg-black text-white px-6 py-3 rounded-md">
           Get your free proposal

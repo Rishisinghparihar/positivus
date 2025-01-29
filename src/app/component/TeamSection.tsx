@@ -5,45 +5,45 @@ import ImageShape from "./ShapeImage";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "John Doe",
-      role: "SEO Expert",
+      name: "John smith",
+      role: "CEO and Founder",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       image: "/44.png",
     },
     {
-      name: "Jane Smith",
-      role: "PPC Specialist",
+      name: "Jane Doe",
+      role: "Director of Operations",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
       image: "/dekhna.png",
     },
     {
       name: "Michael Brown",
-      role: "Social Media Manager",
+      role: "Senior SEO Specialist",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
       image: "/50.png",
     },
     {
-      name: "Michael Brown",
-      role: "Social Media Manager",
+      name: "Emiley Johnson",
+      role: "PPC Manager",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       image: "/46.png",
     },
     {
-      name: "Michael Brown",
-      role: "Social Media Manager",
+      name: "Brian Williams",
+      role: "Social Media Specialist",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
       image: "/47.png",
     },
     {
-      name: "Michael Brown",
-      role: "Social Media Manager",
+      name: "Sarah Kim",
+      role: "Content Creator",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, ",
       image: "/51.png",
     },
   ];
@@ -79,7 +79,7 @@ const TeamSection = () => {
                 </h3>
                 <a
                   href="#"
-                  className="text-black hover:text-PRIMARY text-sm sm:text-base font-medium"
+                  className="text-black hover:text-gray-700 text-sm sm:text-base font-medium"
                 >
                   {teamMember.role}
                 </a>

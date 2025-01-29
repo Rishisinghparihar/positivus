@@ -100,7 +100,7 @@ const CaseStudies = () => {
         {studies.map((study, index) => (
           <div
             key={index}
-            className={`bg-gray-900 p-6 flex flex-col gap-4 border-r-0 lg:border-r-2 ${
+            className={`bg-gray-900 p-10 flex flex-col gap-4 border-r-0 lg:border-r-2 ${
               index === 2 ? "lg:border-gray-900" : "lg:border-white"
             }`}
           >
